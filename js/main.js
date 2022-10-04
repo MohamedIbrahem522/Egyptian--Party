@@ -68,3 +68,17 @@ $(".close").click(function () {
       }, 1000);
     
 })();
+// _______________________________________________________________
+
+let mesLength = document.getElementById('userMessage');
+function getMessageLength() {
+    mesLength.maxLength = '100';
+    let avaliableCharacter = mesLength.maxLength - mesLength.value.length;
+    document.getElementById('char').innerHTML = avaliableCharacter;
+    if (avaliableCharacter == 0) {
+        document.getElementById('char').innerHTML = 'your available character finished';
+    }
+  };
+  mesLength.addEventListener('keyup', function (e) {  
+    getMessageLength();
+  });

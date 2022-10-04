@@ -11,11 +11,11 @@
   </head>
   <body>
     <!----------------------(HEADER)--------------------->
-    <header class="vh-100 ">
+    <header class="vh-100 row">
       <div
         class="layer-header h-100 d-flex align-items-center text-white justify-content-center"
       >
-        <div class="nav-side  h-100 fixed-top">
+        <div class="nav-side col-lg-4 col-sm-2 h-100 fixed-top">
           <div class="close pt-3">
             <i class="fa-solid fa-xmark"></i>
           </div>
@@ -164,35 +164,16 @@
         </div>
         <div class="col-md-6">
           <form action="">
-            <input
-              type="text"
-              name="name"
-              id="userName"
-              placeholder="Enter Name"
-              class="form-control rounded-0 my-3 fs-5"
-            />
-            <input
-              type="email"
-              name="email"
-              id="userEmail"
-              placeholder="Enter Email"
-              class="form-control rounded-0 my-3 fs-5"
-            />
-            <textarea
-              name="message"
-              id="userMessage"
-              cols="30"
-              rows="5"
-              placeholder="Enter Message"
-              class="form-control rounded-0 my-3 fs-5"
-            ></textarea>
-            <span class="char">100</span>
-            <span class="text-capitalize">character remaining</span>
-            <div>
-            <button id="but" class="text-uppercase py-2 px-3 my-2">send message</button>
-            </div>
+              <input type="text" name="name" id="userName" placeholder="Enter Name" class="form-control rounded-0 my-3 fs-5">
+              <input type="email" name="email" id="userEmail" placeholder="Enter Email" class="form-control rounded-0 my-3 fs-5">
+              <textarea name="message" id="userMessage" cols="30" rows="5" placeholder="Enter Message" class="form-control rounded-0 my-3 fs-5"></textarea>
+              <span id='char'>100</span> 
+              <span class='text-capitalize'>character remaining</span>
+              <div>
+              <button id="but" class="text-uppercase  py-2 px-3 my-2"> send message</button>
+              </div>
           </form>
-        </div>
+      </div>
       </div>
     </div>
 
